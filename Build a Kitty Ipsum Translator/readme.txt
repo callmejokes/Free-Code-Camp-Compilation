@@ -27,7 +27,7 @@ Number of characters:
 Number of times meow or meowzer appears:
 7
 
-#
+#grep 'meow[a-z]*' kitty_ipsum_1.txt -n | sed 's/([0-9]+).*/\1/' -E >> kitty_info.txt
 Lines that they appear on:
 1
 4
@@ -35,9 +35,11 @@ Lines that they appear on:
 22
 23
 
+#grep 'cat[a-z]*' kitty_ipsum_1.txt -o | wc -l >> kitty_info.txt
 Number of times cat, cats, or catnip appears:
 7
 
+#grep 'cat[a-z]*' kitty_ipsum_1.txt -n | sed 's/([0-9]+).*/\1/' -E >> kitty_info.txt
 Lines that they appear on:
 1
 3
